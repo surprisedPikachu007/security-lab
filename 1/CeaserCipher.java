@@ -1,5 +1,5 @@
 public class CeaserCipher {
-    static String ceaserCipher(String s, int k) {
+    static String encrypt(String s, int k) {
         String res = "";
 
         for (char c : s.toCharArray()) {
@@ -10,7 +10,14 @@ public class CeaserCipher {
         return res;
     }
 
+    static String decrypt(String s, int k) {
+        return encrypt(s, 26 - k);
+    }
+
     public static void main(String[] args) {
-        System.out.println(ceaserCipher("abC", 3));
+        String plainText = "abC";
+        System.out.println("Plain Text: " + plainText);
+        System.out.println("Encryption: " + encrypt("abC", 3));
+        System.out.println("Decryption: " + decrypt("deF", 3));
     }
 }
