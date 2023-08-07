@@ -22,7 +22,16 @@ public class VigenereCipher {
     }
 
     public static void main(String[] args) {
-        System.out.println(encrypt("GEEKSFORGEEKS", "AYUSH"));
-        System.out.println(decrypt("GCYCZFMLYLEIM", "AYUSH"));
+        System.out.println("Vigenere Cipher\n");
+
+        String key = "WIMBLEDON";
+
+        String plainText = "CSK";
+        System.out.println("Plain Text: " + plainText);
+        System.out.println("Encrypted Text: " + encrypt(plainText, key) + "\n");
+
+        String cipherText = "YAW";
+        System.out.println("Cipher Text: " + cipherText);
+        System.out.println("Decrypted Text: " + decrypt(cipherText, key));
     }
 }

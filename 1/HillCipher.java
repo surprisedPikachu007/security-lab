@@ -64,12 +64,21 @@ public class HillCipher {
     }
 
     public static void main(String[] args) {
+        String key = "GYBNQKURP";
         int[][] inv = {
                 { 8, 5, 10 },
                 { 21, 8, 21 },
                 { 21, 12, 8 }
         };
-        System.out.println(encrypt("ACT", "GYBNQKURP"));
-        System.out.println(decrypt("POH", "GYBNQKURP", inv));
+
+        System.out.println("Hill Cipher\n");
+
+        String plainText = "FLY";
+        System.out.println("Plain Text: " + plainText);
+        System.out.println(encrypt(plainText, key) + "\n");
+
+        String cipherText = "GNX";
+        System.out.println("Cipher Text: " + cipherText);
+        System.out.println(decrypt(cipherText, key, inv));
     }
 }

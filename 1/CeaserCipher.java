@@ -15,9 +15,13 @@ public class CeaserCipher {
     }
 
     public static void main(String[] args) {
-        String plainText = "abC";
+        System.out.println("Ceaser Cipher\n");
+        String plainText = "aBc";
         System.out.println("Plain Text: " + plainText);
-        System.out.println("Encryption: " + encrypt("abC", 3));
+        System.out.println("Encryption: " + encrypt(plainText, 3) + "\n");
+        
+        String cipherText = "deF";
+        System.out.println("Cipher Text: " + cipherText);
         System.out.println("Decryption: " + decrypt("deF", 3));
     }
 }

@@ -115,7 +115,12 @@ public class PlayFair {
     }
 
     public static void main(String[] args) {
-        System.out.println(encrypt("BLUEBIRD", "SKY"));
-        System.out.println();
+        System.out.println("PlayFair Cipher\n");
+
+        String key = "SKY";
+
+        String plainText = "BLUEBIRD";
+        System.out.println("Plain Text: " + plainText);
+        System.out.println("Encrypted Text: " + encrypt(plainText, key));
     }
 }
