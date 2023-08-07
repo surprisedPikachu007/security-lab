@@ -52,7 +52,14 @@ public class RowColumnTransformation {
     }
 
     public static void main(String[] args) {
-        System.out.println(encrypt("Periplaneta americana"));
+        System.out.println("Row Column Transformation\n");
+
+        String plainText = "Periplaneta americana";
+        System.out.println("Plain Text: " + plainText);
+        System.out.println("Encrypted Text: " + encrypt(plainText) + "\n");
+
+        String cipherText = "Ppemceltearaarninaia";
+        System.out.println("Cipher Text: " + cipherText);
         System.out.println(decrypt("Ppemceltearaarninaia"));
     }
 }

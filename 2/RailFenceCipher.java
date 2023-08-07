@@ -62,7 +62,15 @@ public class RailFenceCipher {
     }
 
     public static void main(String[] args) {
-        System.out.println(encrypt("ThunderBird", 3));
-        System.out.println(decrypt("TdihneBrurd", 3));
+        System.out.println("Rail Fence Cipher\n");
+
+        int key = 3;
+        String plainText = "ThunderBird";
+        System.out.println("Plain Text: " + plainText);
+        System.out.println("Encrypted Text: " + encrypt(plainText, key) + "\n");
+
+        String cipherText = "TdihneBrurd";
+        System.out.println("Cipher Text: " + cipherText);
+        System.out.println("Decrypted Text: " + decrypt(cipherText, key));
     }
 }
