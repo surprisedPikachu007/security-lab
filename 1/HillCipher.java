@@ -56,7 +56,7 @@ public class HillCipher {
         return toString(result);
     }
 
-    static String decrypt(String s, String k, int[][] inv) {
+    static String decrypt(String s, int[][] inv) {
         int[] code = getCode(s);
         int[] result = multiply(inv, code);
 
@@ -79,6 +79,6 @@ public class HillCipher {
 
         String cipherText = "GNX";
         System.out.println("Cipher Text: " + cipherText);
-        System.out.println(decrypt(cipherText, key, inv));
+        System.out.println(decrypt(cipherText, inv));
     }
 }
